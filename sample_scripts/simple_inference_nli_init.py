@@ -1,10 +1,13 @@
 import torch
 
-import src.datasets.data as data
-import src.utils.conf as conf
-import src.utils.devices as devices
-import src.runners.inference as inference
-import src.models.nli as nli
+import sys
+sys.path.append('src/')
+
+import datasets.data as data
+import utils.conf as conf
+import utils.devices as devices
+import runners.inference as inference
+import models.nli as nli
 
 
 def run_inference(model_path, data_path, beam_k=None, output_path=None):

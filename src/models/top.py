@@ -1,7 +1,10 @@
 import torch
 import torch.nn as nn
 
-import src.models.generators as generators
+import sys
+sys.path.append('src/')
+
+import models.generators as generators
 
 
 class SimpleModel(nn.Module):

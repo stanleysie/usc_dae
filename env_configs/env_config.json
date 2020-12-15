@@ -1,14 +1,14 @@
 {
-  "sys_path": "path_to_your_code",
-  "vector_cache_path": "path_to_glove_emb",
+  "sys_path": "",
+  "vector_cache_path": "glove/",
   "data_dict": {
     "gigaword": {
-      "data_path": "path_to_gigaword_train_file",
-      "vocab_path": "path_to_gigaword_vocab"
+      "data_path": "train_data/train.article.txt",
+      "vocab_path": "train_data/output_voc_file.txt"
     }
   },
-  "log_folder_path": "path_to_save_logs",
-  "model_save_path": "path_to_save_models",
+  "log_folder_path": "logs/",
+  "model_save_path": "model/",
   "nli_vector_file_name": "path_to_infersent",
   "nli_code_path": "path_to_infersent_code",
   "nli_pickle_path": "path_to_nli_saved_model",

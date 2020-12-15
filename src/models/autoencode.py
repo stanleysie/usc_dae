@@ -3,9 +3,12 @@ import numpy as np
 import torch
 from torch.autograd import Variable
 
-import src.datasets.data as data
-import src.utils.operations as operations
-import src.models.length_control as length_control
+import sys
+sys.path.append('src/')
+
+import datasets.data as data
+import utils.operations as operations
+import models.length_control as length_control
 
 
 def get_autoencode_loss(sent_batch,

@@ -3,7 +3,10 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-import src.datasets.data as data
+import sys
+sys.path.append('src/')
+
+import datasets.data as data
 
 
 def get_length_penalty(

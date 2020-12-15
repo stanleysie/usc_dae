@@ -1,8 +1,9 @@
 import contextlib
 import os
 import sys
+sys.path.append('src/')
 
-import src.utils.misc as misc
+import utils.misc as misc
 
 
 class AbstractLogger:

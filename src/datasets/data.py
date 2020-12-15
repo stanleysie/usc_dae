@@ -318,9 +318,10 @@ def read_embeddings(
     embeddings_vectors_ls = []
     embeddings_words_ls = []
 
-    with open(word_vector_path, "r") as f:
+    with open(word_vector_path, "r", encoding="utf8") as f:
         for i, line in enumerate(f):
             word, vec = line.split(' ', 1)
+            print(word)
             if word in vocabulary_set:
                 embeddings_vectors_ls.append(np.fromstring(vec, sep=' '))
                 embeddings_words_ls.append(word)

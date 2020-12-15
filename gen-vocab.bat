@@ -1,0 +1,1 @@
+python src/datasets/preprocess.py train_data/train.article.txt train_data/output_voc_file.txt

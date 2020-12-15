@@ -4,9 +4,12 @@ import torch
 import torch.nn as nn
 from torch.autograd import Variable
 
-import src.datasets.data as data
-import src.models.attention as attention
-import src.utils.operations as operations
+import sys
+sys.path.append('src/')
+
+import datasets.data as data
+import models.attention as attention
+import utils.operations as operations
 
 
 class RNNDecoder(nn.Module):

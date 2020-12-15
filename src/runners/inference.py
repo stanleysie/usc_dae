@@ -4,9 +4,12 @@ import torch
 from torch.autograd import Variable
 import torch.nn.functional as F
 
-import src.datasets.data as data
-import src.models.length_control as length_control
-import src.utils.operations as operations
+import sys
+sys.path.append('src/')
+
+import datasets.data as data
+import models.length_control as length_control
+import utils.operations as operations
 
 
 class Inference:

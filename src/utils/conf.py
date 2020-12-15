@@ -34,7 +34,7 @@ def argparse_attr(default=attr.NOTHING, validator=None,
         cmp=cmp,
         hash=hash,
         init=init,
-        convert=convert,
+        converter=convert,
         metadata={
             "opt_string_ls": opt_string_ls,
             "argparse_kwargs": argparse_kwargs,

@@ -1,0 +1,1 @@
+python sample_scripts/simple_inference.py model_path test_data_path output_data/

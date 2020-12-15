@@ -3,20 +3,22 @@ import numpy as np
 import os
 
 import torch
+import sys
+sys.path.append('src/')
 
-import src.datasets.data as data
-import src.models.encoders as encoders
-import src.models.decoders as decoders
-import src.models.generators as generators
-import src.models.top as top
-import src.utils.conf as conf
-import src.utils.devices as devices
-import src.utils.operations as operations
-import src.utils.logs as logs
-import src.utils.misc as misc
-import src.models.length_control as length_control
-import src.models.nli as nli
-import src.models.autoencode as autoencode
+import datasets.data as data
+import models.encoders as encoders
+import models.decoders as decoders
+import models.generators as generators
+import models.top as top
+import utils.conf as conf
+import utils.devices as devices
+import utils.operations as operations
+import utils.logs as logs
+import utils.misc as misc
+import models.length_control as length_control
+import models.nli as nli
+import models.autoencode as autoencode
 
 
 class DAETrainer:

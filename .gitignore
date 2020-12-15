@@ -7,3 +7,5 @@ slurm*.out
 logs/*
 models/*
 test_data/*
+glove/*
+train_data/*

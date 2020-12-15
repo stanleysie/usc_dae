@@ -3,9 +3,10 @@ Some code taken from Artxexe:
 https://github.com/artetxem/undreamt
 """
 
+import sys
+sys.path.append('src/')
 
-
-from src.datasets import data
+from datasets import data
 
 import torch
 import torch.nn as nn
