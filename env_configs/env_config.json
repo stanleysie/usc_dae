@@ -8,9 +8,9 @@
     }
   },
   "log_folder_path": "logs/",
-  "model_save_path": "model/",
-  "nli_vector_file_name": "path_to_infersent",
-  "nli_code_path": "path_to_infersent_code",
-  "nli_pickle_path": "path_to_nli_saved_model",
-  "use_gpu": true
+  "model_save_path": "model/saved_model/",
+  "nli_vector_file_name": "glove/glove.6B.300d.txt",
+  "nli_code_path": "src/runners/inference.py",
+  "nli_pickle_path": "model/infersent1.pkl",
+  "use_gpu": false
 }

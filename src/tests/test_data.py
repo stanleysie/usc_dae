@@ -1,8 +1,11 @@
 import numpy as np
 import torch
 
-from src.utils.misc import get_base_dir
-import src.datasets.data as data
+import sys
+sys.path.append('src/')
+
+from utils.misc import get_base_dir
+import datasets.data as data
 
 
 test_data_fol = get_base_dir() / "test_data"

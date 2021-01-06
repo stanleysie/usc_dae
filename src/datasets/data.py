@@ -314,14 +314,15 @@ def read_embeddings(
     # Unlike undreamt, I'm assuming we have a vocabulary
 
     vocabulary_set = set(vocabulary)
+    print(vocabulary_set)
+    pass
 
     embeddings_vectors_ls = []
     embeddings_words_ls = []
-
+    
     with open(word_vector_path, "r", encoding="utf8") as f:
         for i, line in enumerate(f):
             word, vec = line.split(' ', 1)
-            print(word)
             if word in vocabulary_set:
                 embeddings_vectors_ls.append(np.fromstring(vec, sep=' '))
                 embeddings_words_ls.append(word)

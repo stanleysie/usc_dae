@@ -168,7 +168,7 @@ class DAETrainer:
 
             self.logger.write_line(
                 f"[{self.step}] "
-                f"AUT={autoencode_loss.data[0]:.5f}, LP={length_penalty.data[0]:.5f}, Total={loss.data[0]:.5f}"
+                f"AUT={autoencode_loss.data.item():.5f}, LP={length_penalty.data.item():.5f}, Total={loss.data.item():.5f}"
             )
             i = np.random.randint(len(target_ids))
             original_sent = self.dictionary.rawids2sentence(

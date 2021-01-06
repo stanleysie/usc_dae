@@ -1,4 +1,7 @@
-import src.utils.conf as conf
+import sys
+sys.path.append('src/')
+
+import utils.conf as conf
 
 
 def test_configuration_json_consistency():
